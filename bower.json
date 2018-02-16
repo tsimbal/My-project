@@ -1,0 +1,21 @@
+{
+  "name": "first project",
+  "description": "",
+  "main": "",
+  "authors": [
+    "tsimbal <tsimbal1999@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^4.0.0",
+    "fontawesome": "^5.0.6"
+  }
+}

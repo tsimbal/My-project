@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -28,30 +29,29 @@
                 <span class="stock-price">$19.99</span>
             </div>
 
-            <div class="rating-product">
-                <i class="star fas fa-star"></i>
-                <i class="star fas fa-star"></i>
-                <i class="star fas fa-star"></i>
-                <i class="star fas fa-star"></i>
-                <i class="empty-star far fa-star"></i>
-                <label for="share-it">Share it!</label>
+            <div class="rating">
+                <a href="#"><i class="star fas fa-star"></i></a>
+                <a href="#"><i class="star fas fa-star"></i></a>
+                <a href="#"><i class="star fas fa-star"></i></a>
+                <a href="#"><i class="star fas fa-star"></i></a>
+                <a href="#"><i class="empty-star far fa-star"></i></a>
+                <span class="share-it">Share it!</span>
+            </div>
 
-                <div class="share" id="share-it">
-                    <div class="share-title">
-                        <span class="name-share">Share with</span>
-                        <button type="button" class="exit-btn close" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+
+                <div class="social-table">
+                    <div class="share">
+                        <span class="title">Share with</span>
+                        <button class="btn-exit"><i class="fas fa-times"></i></button>
                     </div>
-                    <div class="social-link">
-                        <span class="social-icon"><a href="#"><i class="fab fa-facebook-f"></i></a></span>
-                        <span class="social-icon"><a href="#"><i class="fab fa-twitter"></i></a></span>
-                        <span class="social-icon"><a href="#"><i class="fab fa-pinterest-p"></i></a></span>
-                        <span class="social-icon"><a href="#"><i class="fab fa-youtube"></i></a></span>
-                        <span class="social-icon"><a href="#"><i class="fab fa-instagram"></i></a></span>
+                    <div class="soc-icon">
+                        <a href="#"><i class="soc-icon fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="soc-icon fab fa-twitter"></i></a>
+                        <a href="#"><i class="soc-icon fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="soc-icon fab fa-youtube"></i></a>
+                        <a href="#"><i class="soc-icon fab fa-instagram"></i></a>
                     </div>
                 </div>
-            </div>
 
             <div class="detail">
                 <div class="details-product">
@@ -65,41 +65,64 @@
                 <div class="size-product">
                     <span class="size">size:</span>
                     <form action="#">
-                        <label for="radio-xs"></label>
-                        <input type="radio" id="radio-xs" name="size">xs
-                        <label for="radio-s"></label>
-                        <input type="radio" id="radio-s" name="size">s
-                        <label for="radio-m"></label>
-                        <input type="radio" id="radio-m" name="size">m
-                        <label for="radio-l"></label>
-                        <input type="radio" id="radio-l" name="size" checked>l
+                        <input type="radio" id="radio-xs" name="size">
+                        <label for="radio-xs" class="rad">
+                            <span class="sz">xs</span>
+                        </label>
+
+                        <input type="radio" id="radio-s" name="size">
+                        <label for="radio-s" class="rad">
+                            <span class="sz">s</span>
+                        </label>
+
+                        <input type="radio" id="radio-m" name="size">
+                        <label for="radio-m" class="rad">
+                            <span class="sz">m</span>
+                        </label>
+
+                        <input type="radio" id="radio-l" name="size" checked>
+                        <label for="radio-l" class="rad">
+                            <span class="sz">l</span>
+                        </label>
                     </form>
                 </div>
 
                 <div class="add-to-basket">
-                    <buttun class="btn btn-info">add to cart</buttun>
+                    <button class="btn-add">add to cart</button>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="products">
-        <h2></h2>
+        <h2>you may also like</h2>
         <div class="image">
             <img src="img/product-1.png" alt="product">
-            <span class="full-price">$29.50</span>
-            <span class="stock-price">$19.99</span>
+            <label >
+                <span class="full-price">$29.50</span>
+                <span class="stock-price">$19.99</span>
+            </label>
             <img src="img/product-2.png" alt="product">
-            <span class="full-price">$22.00</span>
+            <label>
+                <span class="full-price">$22.00</span>
+            </label>
             <img src="img/product-3.png" alt="product">
-            <span class="full-price">$24.99</span>
+            <label >
+                <span class="full-price">$24.99</span>
+            </label>
             <img src="img/product-4.png" alt="product">
-            <span class="full-price">$29.50</span>
-            <span class="stock-price">$19.99</span>
+            <label>
+                <span class="full-price">$29.50</span>
+                <span class="stock-price">$19.99</span>
+            </label>
             <img src="img/product-5.png" alt="product">
-            <span class="full-price">$60.00</span>
+            <label>
+                <span class="full-price">$60.00</span>
+            </label>
             <img src="img/product-6.png" alt="product">
-            <span class="full-price">$54.00</span>
+            <label>
+                <span class="full-price">$54.00</span>
+            </label>
         </div>
     </div>
 </body>

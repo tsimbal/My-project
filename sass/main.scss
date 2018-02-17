@@ -219,33 +219,74 @@ body{
   }
 }
 
-.products{
-
-  margin: 30px 60px;
-  h2{
-    display: flex;
-    justify-content: flex-start;
+.title-products{
+  display: flex;
+  margin-left: 60px;
+  h2 {
     text-transform: uppercase;
     color: #2c303d;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
   }
+}
 
-  .image{
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 60px;
 
-    img{
-      position: relative;
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
+  img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .image-stock{
+    display: inline-flex;
+
+    span.price-full{
+      text-decoration: line-through;
+      background-color: #8ae6cf;
+      position: absolute;
+      font-family: "Open Sans",sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      bottom: 30px;
+      right: 70px;
+      padding: 0 10px;
     }
 
-    label{
+    span.stock-price{
+      background-color: #8ae6cf;
       position: absolute;
+      font-family: "Open Sans",sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      bottom: 30px;
+      right: 0px;
+      color: #ce2c52;
+      padding: 0 10px;
 
     }
   }
+  .image{
+    justify-content: space-around;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 20px;
+
+    span.price{
+      background-color: #8ae6cf;
+      position: absolute;
+      font-family: "Open Sans",sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      bottom: 30px;
+      right: 0;
+    }
+  }
 }
+
 
 
 

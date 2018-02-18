@@ -13,13 +13,6 @@ body {
   background-color: #f6f6f6;
 
   .main-container {
-    //@media screen and (min-width: 403px) and  (max-width: 933px) {
-    //  width: 717px;
-    //}
-    //
-    //@media screen and (max-width: 717px) {
-    //  width: 402px;
-    //}
 
     @media screen and (min-width: 934px) {
       width: 934px;
@@ -31,10 +24,6 @@ body {
 
     @media screen and (max-width: 717px) {
       width: 402px;
-    }
-
-    @media screen and (min-width: 320px) and (max-width: 716px) {
-      width: 320px;
     }
 
     width: 934px;
@@ -51,7 +40,6 @@ body {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        width: 100%;
         position: relative;
         top: 105px;
       }
@@ -62,7 +50,6 @@ body {
           position: relative;
         }
 
-        background-color: #eaf2f4;
         width: 400px;
         height: 420px;
 

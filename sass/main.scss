@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Oswald:700');
 @import "../bower_components/bootstrap/dist/css/bootstrap.min.css";
+//@import "../bower_components/bootstrap/dist/js/bootstrap.min.js";
+//@import "../bower_components/jquery/dist/jquery.min.js";
 @import "../bower_components/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css";
 
 
@@ -15,6 +17,11 @@ body {
       width: 717px;
     }
 
+    @media screen and (max-width: 402px) {
+      width: 402px;
+      padding: 0 0;
+    }
+
     width: 934px;
     margin: 0 auto;
     padding: 30px 50px;
@@ -24,16 +31,34 @@ body {
         position: relative;
         top: 40px;
       }
+
+      @media screen and (max-width: 402px) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+        top: 105px;
+      }
       display: flex;
 
       .image-product {
+        @media screen and (max-width: 402px) {
+          position: relative;
+        }
 
         background-color: #eaf2f4;
         width: 400px;
         height: 420px;
 
         img {
-          padding: 25px 60px;
+          @media screen and (min-width: 402px) and (max-width: 717px) {
+            padding: 10px 35px;
+          }
+          padding: 10px 85px;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
       }
 
@@ -41,16 +66,27 @@ body {
         @media screen and (min-width: 402px) and (max-width: 717px) {
           margin-left: 20px;
         }
+
+        @media screen and (max-width: 402px) {
+          margin: 0 35px;
+        }
         margin-left: 60px;
+        width: 365px;
 
         .title-product {
-          h2 {
-            @media screen and (min-width: 402px) and (max-width: 717px) {
+          @media screen and (min-width: 402px) and (max-width: 717px) {
             position: absolute;
             top: -35px;
             left: 0;
           }
 
+          @media screen and (max-width: 402px) {
+            position: absolute;
+            top: -80px;
+            padding: 0 55px 0 30px;
+          }
+
+          h2 {
             font-family: "Oswald", sans-serif;
             font-size: 24px;
             font-weight: 700;
@@ -72,6 +108,10 @@ body {
           margin-bottom: 10px;
 
           span.full-price {
+            @media screen and (max-width: 717px) {
+              font-size: 36px;
+            }
+
             text-decoration: line-through;
             color: #2c303d;
             font-family: $local-font;
@@ -80,6 +120,10 @@ body {
           }
 
           span.stock-price {
+            @media screen and (max-width: 717px) {
+              font-size: 36px;
+            }
+
             margin-left: 20px;
             color: #ce2c52;
             font-family: $local-font;
@@ -104,15 +148,19 @@ body {
         }
 
         .share-btn {
-          @media screen and (min-width: 402px) and (max-width: 717px) {
-            display: none;
+          @media screen and (max-width: 402px) {
+            margin-left: 15px;
           }
-
           display: inline-flex;
           flex-wrap: wrap;
           position: relative;
 
           button.share-it {
+            @media screen and (max-width: 717px) {
+              display: none;
+            }
+
+            cursor: pointer;
             outline: none;
             background-color: transparent;
             border: none;
@@ -128,6 +176,18 @@ body {
           }
 
           .social-table {
+            @media screen and (min-width: 402px) and (max-width: 717px) {
+              display: flex;
+              background: transparent;
+            }
+            @media screen and (max-width: 402px) {
+              display: flex;
+              background: transparent;
+              position: relative;
+              top: 0;
+              left: 0;
+            }
+
             width: 290px;
             height: 100px;
             background-color: #fff;
@@ -141,6 +201,10 @@ body {
 
 
             &:after {
+              @media screen and (max-width: 717px) {
+                display: none;
+              }
+
               content: '';
               border: 10px solid;
               border-color: transparent transparent #ffffff;
@@ -149,6 +213,10 @@ body {
             }
 
             .share {
+              @media screen and (max-width: 717px) {
+                display: none;
+              }
+
               span.title {
                 margin-right: 70px;
                 color: #2c87ce;
@@ -169,6 +237,19 @@ body {
 
             .soc-icon {
               a {
+                @media screen and (min-width: 402px) and (max-width: 717px) {
+                  display: flex;
+                  position: relative;
+                  top: -45px;
+                  left: -455px;
+                  margin: 10px;
+                }
+
+                @media screen and (max-width: 402px) {
+                  margin: 4px;
+                }
+
+                cursor: pointer;
                 text-decoration: none;
                 display: inline-flex;
                 justify-content: center;
@@ -188,6 +269,9 @@ body {
         }
 
         .detail {
+          @media screen and (max-width: 402px) {
+            margin-top: 0;
+          }
           margin-top: 30px;
 
           span.det {
@@ -205,7 +289,13 @@ body {
 
           .inf {
             margin-top: 5px;
+
             p {
+              @media screen and (max-width: 402px) {
+                font-size: 14px;
+                margin-bottom: 0;
+              }
+
               font-family: $local-font;
               font-weight: 300;
               color: #282828;
@@ -220,13 +310,20 @@ body {
               margin-top: 10px;
             }
 
+            @media screen and (max-width: 402px) {
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              margin-top: 15px;
+            }
+
             margin-top: 30px;
             display: flex;
             align-items: center;
             text-transform: uppercase;
 
             span.sel-sz{
-              @media screen and (min-width: 402px) and (max-width: 717px) {
+              @media screen and (max-width: 717px) {
                 display: flex;
               }
 
@@ -238,7 +335,7 @@ body {
             }
 
             span.size {
-              @media screen and (min-width: 402px) and (max-width: 717px) {
+              @media screen and (max-width: 717px) {
                 display: none;
               }
 
@@ -249,16 +346,17 @@ body {
             }
 
             form {
-              @media screen and (min-width: 402px) and (max-width: 717px) {
+              @media screen and(max-width: 717px) {
                 margin-left: 0;
               }
-
               margin-left: 15px;
 
               label.rad {
-                @media screen and (min-width: 402px) and (max-width: 717px) {
-                  margin: 5px;
+                @media screen and (max-width: 402px) {
+                  margin: 10px;
                 }
+
+                cursor: pointer;
                 margin: 3px;
                 display: inline-flex;
                 align-items: center;
@@ -298,8 +396,14 @@ body {
           }
 
           .add-to-basket{
+            @media screen and (max-width: 402px) {
+              display: flex;
+              justify-content: center;
+              margin-top: 5px;
+            }
             margin-top: 15px;
             .btn-add{
+              cursor: pointer;
               text-transform: uppercase;
               border-radius: 25px;
               background-color: #8ae6cf;
@@ -317,14 +421,23 @@ body {
     }
 
     .title-products {
-      margin-top: 65px;
-
       @media screen and (min-width: 402px) and (max-width: 717px) {
         display: flex;
         justify-content: center;
       }
 
+      @media screen and (max-width: 402px) {
+        display: flex;
+        justify-content: center;
+        margin-top: 130px;
+      }
+
+      margin-top: 65px;
+
       h2 {
+        @media screen and (max-width: 402px) {
+          font-size: 24px;
+        }
         text-transform: uppercase;
         color: #2c303d;
         font-family: $local-font;
@@ -338,6 +451,11 @@ body {
         justify-content: space-between;
       }
 
+      @media screen and (max-width: 402px) {
+        display: flex;
+        justify-content: center;
+      }
+
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -347,6 +465,10 @@ body {
           display: flex;
           justify-content: space-between;
           margin: 20px 15px;
+        }
+
+        @media screen and (max-width: 402px) {
+          display: none;
         }
 
         position: relative;
@@ -400,6 +522,34 @@ body {
             right: 0px;
             color: #ce2c52;
             padding: 0 10px;
+          }
+        }
+      }
+
+      .carousel{
+        @media screen and (max-width: 402px) {
+          display: flex;
+        }
+
+        display: none;
+        .carousel-inner{
+          .carousel-item{
+
+            .price-list{
+              position: relative;
+              bottom: 25px;
+
+
+              span.price-full{
+                position: absolute;
+                color: #ce2c52;
+                background-color: rgba(138, 230, 207, 0.81);
+                font-family: $local-font;
+                font-weight: 700;
+                font-size: 18px;
+                padding: 0 105px;
+              }
+            }
           }
         }
       }

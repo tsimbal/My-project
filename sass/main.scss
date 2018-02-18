@@ -320,7 +320,7 @@ body {
             align-items: center;
             text-transform: uppercase;
 
-            span.sel-sz{
+            span.sel-sz {
               @media screen and (max-width: 933px) {
                 display: flex;
               }
@@ -393,7 +393,7 @@ body {
             }
           }
 
-          .add-to-basket{
+          .add-to-basket {
             @media screen and (max-width: 717px) {
               display: flex;
               justify-content: center;
@@ -480,7 +480,7 @@ body {
           object-fit: cover;
         }
 
-        .price-list{
+        .price-list {
           @media screen and (min-width: 716px) and (max-width: 933px) {
             bottom: 0;
             width: 100%;
@@ -494,7 +494,7 @@ body {
           right: 0;
           bottom: 25px;
 
-          span.price-full{
+          span.price-full {
             @media screen and (min-width: 716px) and (max-width: 933px) {
               display: none;
             }
@@ -508,7 +508,7 @@ body {
             padding: 0 10px;
           }
 
-          span.stock-price{
+          span.stock-price {
             @media screen and (min-width: 716px) and (max-width: 933px) {
               color: #2c303d;
             }
@@ -524,21 +524,21 @@ body {
         }
       }
 
-      .carousel{
+      .carousel {
         @media screen and (max-width: 717px) {
           display: flex;
         }
 
         display: none;
-        .carousel-inner{
-          .carousel-item{
+        .carousel-inner {
+          .carousel-item {
 
-            .price-list{
+            .price-list {
               position: relative;
               bottom: 25px;
 
 
-              span.price-full{
+              span.price-full {
                 position: absolute;
                 color: #ce2c52;
                 background-color: rgba(138, 230, 207, 0.81);
@@ -550,6 +550,19 @@ body {
             }
           }
         }
+      }
+
+      a.prev {
+        left: -45px;
+      }
+
+      a.next {
+        right: -45px;
+      }
+
+      i {
+        font-size: 90px;
+        color: #949494;
       }
     }
   }

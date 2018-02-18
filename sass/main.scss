@@ -13,13 +13,28 @@ body {
   background-color: #f6f6f6;
 
   .main-container {
-    @media screen and (min-width: 402px) and (max-width: 933px) {
+    //@media screen and (min-width: 403px) and  (max-width: 933px) {
+    //  width: 717px;
+    //}
+    //
+    //@media screen and (max-width: 717px) {
+    //  width: 402px;
+    //}
+
+    @media screen and (min-width: 934px) {
+      width: 934px;
+    }
+
+    @media screen and (max-width: 933px) and (min-width: 718px) {
       width: 717px;
     }
 
-    @media screen and (max-width: 402px) {
+    @media screen and (max-width: 717px) {
       width: 402px;
-      padding: 0 0;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 716px) {
+      width: 320px;
     }
 
     width: 934px;
@@ -27,12 +42,12 @@ body {
     padding: 30px 50px;
 
     .description-product {
-      @media screen and (min-width: 402px) and (max-width: 717px) {
+      @media screen and (min-width: 401px) and (max-width: 933px) {
         position: relative;
         top: 40px;
       }
 
-      @media screen and (max-width: 402px) {
+      @media screen and (max-width: 717px) {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -43,7 +58,7 @@ body {
       display: flex;
 
       .image-product {
-        @media screen and (max-width: 402px) {
+        @media screen and (max-width: 717px) {
           position: relative;
         }
 
@@ -59,24 +74,24 @@ body {
       }
 
       .info-product {
-        @media screen and (min-width: 402px) and (max-width: 717px) {
+        @media screen and (min-width: 716px) and (max-width: 933px) {
           margin-left: 20px;
         }
 
-        @media screen and (max-width: 402px) {
+        @media screen and (max-width: 717px) {
           margin: 0 35px;
         }
         margin-left: 60px;
         width: 365px;
 
         .title-product {
-          @media screen and (min-width: 402px) and (max-width: 717px) {
+          @media screen and (min-width: 716px) and (max-width: 933px) {
             position: absolute;
             top: -35px;
             left: 0;
           }
 
-          @media screen and (max-width: 402px) {
+          @media screen and (max-width: 717px) {
             position: absolute;
             top: -80px;
             padding: 0 55px 0 30px;
@@ -104,7 +119,7 @@ body {
           margin-bottom: 10px;
 
           span.full-price {
-            @media screen and (max-width: 717px) {
+            @media screen and (max-width: 933px) {
               font-size: 36px;
             }
 
@@ -116,7 +131,7 @@ body {
           }
 
           span.stock-price {
-            @media screen and (max-width: 717px) {
+            @media screen and (max-width: 933px) {
               font-size: 36px;
             }
 
@@ -144,7 +159,7 @@ body {
         }
 
         .share-btn {
-          @media screen and (max-width: 402px) {
+          @media screen and (max-width: 717px) {
             margin-left: 15px;
           }
           display: inline-flex;
@@ -152,7 +167,7 @@ body {
           position: relative;
 
           button.share-it {
-            @media screen and (max-width: 717px) {
+            @media screen and (max-width: 933px) {
               display: none;
             }
 
@@ -172,11 +187,11 @@ body {
           }
 
           .social-table {
-            @media screen and (min-width: 402px) and (max-width: 717px) {
+            @media screen and (min-width: 716px) and (max-width: 933px) {
               display: flex;
               background: transparent;
             }
-            @media screen and (max-width: 402px) {
+            @media screen and (max-width: 717px) {
               display: flex;
               background: transparent;
               position: relative;
@@ -197,7 +212,7 @@ body {
 
 
             &:after {
-              @media screen and (max-width: 717px) {
+              @media screen and (max-width: 933px) {
                 display: none;
               }
 
@@ -209,7 +224,7 @@ body {
             }
 
             .share {
-              @media screen and (max-width: 717px) {
+              @media screen and (max-width: 933px) {
                 display: none;
               }
 
@@ -233,7 +248,7 @@ body {
 
             .soc-icon {
               a {
-                @media screen and (min-width: 402px) and (max-width: 717px) {
+                @media screen and (min-width: 716px) and (max-width: 933px) {
                   display: flex;
                   position: relative;
                   top: -45px;
@@ -241,7 +256,7 @@ body {
                   margin: 10px;
                 }
 
-                @media screen and (max-width: 402px) {
+                @media screen and (max-width: 717px) {
                   margin: 4px;
                 }
 
@@ -265,13 +280,13 @@ body {
         }
 
         .detail {
-          @media screen and (max-width: 402px) {
+          @media screen and (max-width: 717px) {
             margin-top: 0;
           }
           margin-top: 30px;
 
           span.det {
-            @media screen and (min-width: 402px) and (max-width: 717px) {
+            @media screen and (min-width: 716px) and (max-width: 933px) {
               display: flex;
             }
 
@@ -287,7 +302,7 @@ body {
             margin-top: 5px;
 
             p {
-              @media screen and (max-width: 402px) {
+              @media screen and (max-width: 717px) {
                 font-size: 14px;
                 margin-bottom: 0;
               }
@@ -300,13 +315,13 @@ body {
           }
 
           .size-product {
-            @media screen and (min-width: 402px) and (max-width: 717px) {
+            @media screen and (min-width: 716px) and (max-width: 933px) {
               display: inline-flex;
               flex-wrap: wrap;
               margin-top: 10px;
             }
 
-            @media screen and (max-width: 402px) {
+            @media screen and (max-width: 717px) {
               display: flex;
               justify-content: center;
               flex-wrap: wrap;
@@ -319,7 +334,7 @@ body {
             text-transform: uppercase;
 
             span.sel-sz{
-              @media screen and (max-width: 717px) {
+              @media screen and (max-width: 933px) {
                 display: flex;
               }
 
@@ -331,7 +346,7 @@ body {
             }
 
             span.size {
-              @media screen and (max-width: 717px) {
+              @media screen and (max-width: 933px) {
                 display: none;
               }
 
@@ -342,13 +357,13 @@ body {
             }
 
             form {
-              @media screen and(max-width: 717px) {
+              @media screen and(max-width: 933px) {
                 margin-left: 0;
               }
               margin-left: 15px;
 
               label.rad {
-                @media screen and (max-width: 402px) {
+                @media screen and (max-width: 717px) {
                   margin: 10px;
                 }
 
@@ -392,7 +407,7 @@ body {
           }
 
           .add-to-basket{
-            @media screen and (max-width: 402px) {
+            @media screen and (max-width: 717px) {
               display: flex;
               justify-content: center;
               margin-top: 5px;
@@ -417,12 +432,12 @@ body {
     }
 
     .title-products {
-      @media screen and (min-width: 402px) and (max-width: 717px) {
+      @media screen and (min-width: 716px) and (max-width: 933px) {
         display: flex;
         justify-content: center;
       }
 
-      @media screen and (max-width: 402px) {
+      @media screen and (max-width: 717px) {
         display: flex;
         justify-content: center;
         margin-top: 130px;
@@ -431,7 +446,7 @@ body {
       margin-top: 65px;
 
       h2 {
-        @media screen and (max-width: 402px) {
+        @media screen and (max-width: 717px) {
           font-size: 24px;
         }
         text-transform: uppercase;
@@ -442,12 +457,12 @@ body {
     }
 
     .products {
-      @media screen and (min-width: 402px) and (max-width: 717px) {
+      @media screen and (min-width: 716px) and (max-width: 933px) {
         display: flex;
         justify-content: space-between;
       }
 
-      @media screen and (max-width: 402px) {
+      @media screen and (max-width: 717px) {
         display: flex;
         justify-content: center;
       }
@@ -457,13 +472,13 @@ body {
       justify-content: space-between;
 
       .image {
-        @media screen and (min-width: 402px) and (max-width: 717px) {
+        @media screen and (min-width: 716px) and (max-width: 933px) {
           display: flex;
           justify-content: space-between;
           margin: 20px 15px;
         }
 
-        @media screen and (max-width: 402px) {
+        @media screen and (max-width: 717px) {
           display: none;
         }
 
@@ -479,7 +494,7 @@ body {
         }
 
         .price-list{
-          @media screen and (min-width: 402px) and (max-width: 717px) {
+          @media screen and (min-width: 716px) and (max-width: 933px) {
             bottom: 0;
             width: 100%;
             display: flex;
@@ -493,7 +508,7 @@ body {
           bottom: 25px;
 
           span.price-full{
-            @media screen and (min-width: 402px) and (max-width: 717px) {
+            @media screen and (min-width: 716px) and (max-width: 933px) {
               display: none;
             }
 
@@ -507,7 +522,7 @@ body {
           }
 
           span.stock-price{
-            @media screen and (min-width: 402px) and (max-width: 717px) {
+            @media screen and (min-width: 716px) and (max-width: 933px) {
               color: #2c303d;
             }
 
@@ -523,7 +538,7 @@ body {
       }
 
       .carousel{
-        @media screen and (max-width: 402px) {
+        @media screen and (max-width: 717px) {
           display: flex;
         }
 
